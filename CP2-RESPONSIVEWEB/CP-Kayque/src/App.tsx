@@ -36,7 +36,7 @@ function App() {
     </Routes>
     </main>
     <footer className="bg-gradient-to-r from-red-800 to-red-500 text-white p-4 text-center">
-      <p className="text-2xl">© 2024 Kayque Ferreira dos Santos - RM552605 - Github: https://github.com/kayquesann</p>
+      <p className="text-2xl">© 2024 Kayque Ferreira dos Santos - RM552605 - 1TDSZ - Github: https://github.com/kayquesann</p>
     </footer>
 
       

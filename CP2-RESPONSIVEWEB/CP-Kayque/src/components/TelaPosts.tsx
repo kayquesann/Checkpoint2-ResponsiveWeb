@@ -30,13 +30,15 @@ const TelaPosts: React.FC = () => {
     
     return(
         <div>
-        <h1 className='font-bold text-center'>Posts</h1>
+        <h1 className='font-bold text-center'>POSTS</h1>
         <br></br>
-            <ul>
+            <ul className='p-5'>
                 {posts.map(post => (
                     <li key={post.id}>
                         <h2 className='font-bold'>{post.title}</h2>
                         <p>{post.body}</p>
+                        <br></br>
+                        <br></br>
                     </li>
                 ))}
             </ul>

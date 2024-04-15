@@ -30,16 +30,23 @@ const TelaUsuarios: React.FC = () => {
 
     return(
         <div>
-            <h1 className='font-bold text-center'>Users</h1>
-            <ul>
+            <h1 className='text-center font-bold'>USERS</h1>
+            <table className='table-auto border border-collapse border-black'>
+                <tr>
+                    <th className='border border-black px-4 py-2'>ID</th>
+                    <th className='border border-black px-4 py-2'>Name</th>
+                    <th className='border border-black px-4 py-2'>Username</th>
+                    <th className='border border-black px-4 py-2'>Email</th>
+                </tr>
                 {users.map(user => (
-                    <li key={user.id}>
-                        <h2>{user.name}</h2>
-                        <p className='font-bold'>Username: {user.username}</p>
-                        <p>Email: {user.email}</p>
-                    </li>
+                    <tr key={user.id}>
+                        <td className='border border-black px-4 py-2'>{user.id}</td>
+                        <td className='border border-black px-4 py-2'>{user.name}</td>
+                        <td className='border border-black px-4 py-2'>{user.username}</td>
+                        <td className='border border-black px-4 py-2'>{user.email}</td>
+                    </tr>
                 ))}
-            </ul>
+            </table>
         </div>
     )
 }
